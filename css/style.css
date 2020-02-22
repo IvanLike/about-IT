@@ -45,7 +45,7 @@ body {
 .big-pic {
   height: calc(100vh - 120px);
   width: 100%;
-  background: url("/img/overflow.webp");
+  background: url("https://www.rocketspace.com/hs-fs/hubfs/images_rocketspace/RocketSpace64_-_Wide.jpg?width=2100&name=RocketSpace64_-_Wide.jpg");
 }
 .split {
   display: flex;
