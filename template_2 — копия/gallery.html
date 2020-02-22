@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav>
+        <ul class="main-menu">
+          <li class="menu-item">
+            <a class="menu-link" href="./prikol.html"
+              ><i class="fas fa-magic"></i>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="./index.html"
+              ><i class="fas fa-home"></i>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="./gallery.html"
+              ><i class="fas fa-camera"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="mail2">
+        <h1 class="galerynazv">Галерея</h1>
+        <div class="slider">
+          <div id="sliderEl" class="slider_body">
+            <div class="slider__img img1"></div>
+
+            <div class="slider__img img2"></div>
+
+            <div class="slider__img img3"></div>
+          </div>
+
+          <div id="btnLeft" class="btn btn-left"></div>
+
+          <div id="btnRight" class="btn btn-right"></div>
+        </div>
+
+        <script>
+          let sliderEl = document.getElementById("sliderEl");
+
+          let btnLeft = document.getElementById("btnLeft");
+
+          let btnRight = document.getElementById("btnRight");
+
+          let img_num = 1;
+
+          btnLeft.addEventListener("click", function() {
+            if (img_num > 1) {
+              sliderEl.classList.add("pos" + (img_num - 1));
+
+              sliderEl.classList.remove("pos" + img_num);
+
+              img_num -= 1;
+            } else {
+              sliderEl.classList.add("pos" + 1);
+
+              sliderEl.classList.remove("pos" + img_num);
+
+              img_num = 4;
+            }
+          });
+
+          btnRight.addEventListener("click", function() {
+            if (img_num < 3) {
+              sliderEl.classList.add("pos" + (img_num + 1));
+
+              sliderEl.classList.remove("pos" + img_num);
+
+              img_num += 1;
+            } else {
+              sliderEl.classList.add("pos" - 1);
+
+              sliderEl.classList.remove("pos" + img_num);
+
+              img_num = 1;
+            }
+          });
+        </script>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div class="contacts">
+        <a><b>Автор сайта: </b></a>
+        <a href="http://vk.com/likeget"><b>Перегудов Иван</b></a>
+        <a><b>Источник:</b></a>
+        <a href="http://the-village.ru"><b>The-Village.ru</b></a>
+      </div>
+    </footer>
+  </body>
+</html>
