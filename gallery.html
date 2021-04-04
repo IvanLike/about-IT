@@ -47,27 +47,45 @@
           <div id="sliderEl" class="slider_body">
             <div class="slider__img img1"></div>
 
-            <div class="slider__img img2"></div>
+            <div class="slider__img img2">
+              <img src="img/office_mail2.jpg" alt="" />
+            </div>
 
-            <div class="slider__img img3"></div>
-            
-            <div class="slider__img img4"></div>
-            
+            <div class="slider__img img3">
+              <img src="img/office_mail3.jpg" alt="" />
+            </div>
+
+            <div class="slider__img img4">
+              <img src="img/office_mail4.jpg" alt="" />
+            </div>
+
             <div class="slider__img img5"></div>
-            
-            <div class="slider__img img6"></div>
-            
-            <div class="slider__img img7"></div>
-            
-            <div class="slider__img img8"></div>
-            
+
+            <div class="slider__img img6">
+              <img src="img/office_google2.jpg" alt="" />
+            </div>
+
+            <div class="slider__img img7">
+              <img src="img/office_google3.jpg" alt="" />
+            </div>
+
+            <div class="slider__img img8">
+              <img src="img/office_google4.jpg" alt="" />
+            </div>
+
             <div class="slider__img img9"></div>
-            
-            <div class="slider__img img10"></div>
-            
-            <div class="slider__img img11"></div>
-            
-            <div class="slider__img img12"></div>
+
+            <div class="slider__img img10">
+              <img src="img/office_yandex2.jpg" alt="" />
+            </div>
+
+            <div class="slider__img img11">
+              <img src="img/office_yandex3.jpg" alt="" />
+            </div>
+
+            <div class="slider__img img12">
+              <img src="img/office_yandex4.jpg" alt="" />
+            </div>
           </div>
 
           <div id="btnLeft" class="btn btn-left"></div>
@@ -84,7 +102,7 @@
 
           let img_num = 1;
 
-          btnLeft.addEventListener("click", function() {
+          btnLeft.addEventListener("click", function () {
             if (img_num > 1) {
               sliderEl.classList.add("pos" + (img_num - 1));
 
@@ -100,7 +118,7 @@
             }
           });
 
-          btnRight.addEventListener("click", function() {
+          btnRight.addEventListener("click", function () {
             if (img_num < 12) {
               sliderEl.classList.add("pos" + (img_num + 1));
 
